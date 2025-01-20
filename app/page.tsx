@@ -37,6 +37,7 @@ export default function Home() {
           <StatsSection />
           <HowItWorks />
           <UniqueFeatures />
+          
           <Testimonials />
           <FAQs />
           <CallToValue />

@@ -32,7 +32,7 @@ export default function WelcomeOverlay() {
         >
           {/* Animierter Hintergrund mit Kreis */}
           <DynamicBackground />
-
+          
           <div className="text-center z-10">
             {/* Titel mit Animation */}
             <motion.h1
@@ -41,7 +41,7 @@ export default function WelcomeOverlay() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-5xl font-bold text-white mb-4"
             >
-              Welcome to your personal health journey.
+              Your Personal Health Revolution Starts Here.
             </motion.h1>
 
             {/* Untertitel mit Animation */}
@@ -51,7 +51,7 @@ export default function WelcomeOverlay() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-2xl text-cyan-300 mb-8"
             >
-              Let's take the first step together.
+              Forget resolutions, start realizing goals with FitGuide
             </motion.p>
 
             {/* "Start Now" Button mit Animation */}
