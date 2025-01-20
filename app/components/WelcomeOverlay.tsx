@@ -84,7 +84,8 @@ export default function WelcomeOverlay() {
               />
             </motion.button>
           </div>
-        </motion.div>
+        </motion.div>)}
+    </AnimatePresence>
       )
 }
 
