@@ -11,7 +11,7 @@ export default function HeroSection() {
     setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false)
-      play('welcome')
+      
     }, 2000)
   }
 
@@ -30,7 +30,7 @@ export default function HeroSection() {
               disabled={isLoading}
             >
               <span className="relative z-10">
-                {isLoading ? 'Starting Your Journey...' : 'Let Me Guide You'}
+                {isLoading ? 'Starting Your Journey...' : 'Step Into Your Journey'}
               </span>
               <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-25 transition-opacity duration-300"></span>
               {isLoading && (
