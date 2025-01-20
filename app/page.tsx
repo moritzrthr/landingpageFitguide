@@ -31,7 +31,6 @@ export default function Home() {
       {showContent && (
         <ScrollSound>
           <HeroSection />
-          <SocialProof />
           <ProblemSection />
           <SolutionSection />
           <StatsSection />

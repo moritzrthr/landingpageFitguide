@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/3">
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <p className="text-gray-400">Email: info@fitguide.com</p>
+            <p className="text-gray-400">Email: fitguide@thamori.com</p>
             <div className="flex space-x-4 mt-4">
               <Link href="#" className="hover:text-blue-400">Facebook</Link>
               <Link href="#" className="hover:text-blue-400">Twitter</Link>
