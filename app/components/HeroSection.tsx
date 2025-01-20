@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { useAudio } from '../hooks/useAudio'
 import { useState } from 'react'
+import { Mail } from "lucide-react"
 
 export default function HeroSection() {
   const { play } = useAudio()
@@ -9,10 +10,13 @@ export default function HeroSection() {
 
   const handleClick = () => {
     setIsLoading(true)
+    play("MVP")
     setTimeout(() => {
       setIsLoading(false)
       
     }, 2000)
+    window.location.href = "mailto:fitguide@thamori.com?subject=Question%20about%20Fitguide"
+  
   }
 
   return (

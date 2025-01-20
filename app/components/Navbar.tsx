@@ -3,11 +3,21 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useAudio } from '../hooks/useAudio'
 import { Button } from '@/components/ui/button'
+import { Mail } from "lucide-react"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const { play } = useAudio()
 
+  const handleButtonClick = () => {
+    play("MVP")
+    
+    console.log('Button clicked!')
+    window.location.href = "mailto:fitguide@thamori.com?subject=Question%20about%20Fitguide"
+  
+  }
   return (
     <nav className="bg-white shadow-md fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,7 +47,8 @@ export default function Navbar() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <Button>Get Started Today</Button>
+            <Button onClick={handleButtonClick}>Get Started Today</Button>
+
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
