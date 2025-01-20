@@ -11,6 +11,10 @@
   "dependencies": {
     "framer-motion": "^6.0.0", 
     "lucide-react": "^0.21.0",
+    
+    "@react-three/drei": "^9.0.0", // Beispielversion, bitte die aktuelle Version verwenden
+    "@react-three/fiber": "^8.0.0", // Beispielversion, bitte die aktuelle Version verwenden
+    
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-alert-dialog": "^1.1.4",

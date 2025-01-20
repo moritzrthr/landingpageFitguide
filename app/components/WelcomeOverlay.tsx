@@ -83,7 +83,7 @@ export default function WelcomeOverlay() {
                 style={{ filter: "blur(15px)" }}
               />
             </motion.button>
-          </div>
+          </div> 
         </motion.div>)}
     </AnimatePresence>
       )
