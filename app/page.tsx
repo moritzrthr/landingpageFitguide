@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 import HeroSection from "./components/HeroSection"
 import SocialProof from "./components/SocialProof"
 import ProblemSection from "./components/ProblemSection"
